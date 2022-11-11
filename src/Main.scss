@@ -3,7 +3,7 @@
 
 main {
   
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   
   @include large {
     grid-column: 1 / span 2;
@@ -15,7 +15,7 @@ main {
 
   .header_image {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .header_image_mobile {
@@ -42,14 +42,14 @@ main {
   h1 {
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 41px;
-    margin-bottom: 31px;
-    line-height: 56px;
+    font-size: 2.5625rem;
+    margin-bottom: 1.9375rem;
+    line-height: 3.5rem;
 
     grid-column: 1 / span2;
 
     @include large {
-      font-size: 57px;
+      font-size: 3.5625rem;
       grid-column: 1 / 2;
       margin-bottom: 0;
     }
@@ -58,21 +58,21 @@ main {
   .mainGridRight {
     grid-column: 1 / span2;
 
-    line-height: 24px;;
+    line-height: 1.5rem;;
 
     @include large {
       grid-column: 2 / 3;
-      margin-left: 15px;
+      margin-left: 0.9375rem;
     }
   }
 
   p {
-    margin-bottom: 29px;
+    margin-bottom: 1.8125rem;
   }
 
   .button {
-    width: 185px;
-    height: 48px;
+    width: 11.5625rem;
+    height: 3rem;
     background: $color-soft-red;
 
     display: flex;

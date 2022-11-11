@@ -6,22 +6,22 @@ aside {
         grid-column: 3/ span 1;
         grid-row: 2 / span 1;
 
-        padding: 28px 21px 0 21px;
+        padding: 1.75rem 1.3125rem 0 1.3125rem;
     }
     background: $color-very-dark-blue;
     color: $color-off-white;
-    padding: 28px 21px;
+    padding: 1.75rem 1.3125rem;
     
 
     h2 {
-        font-size: 32px;
+        font-size: 2rem;
         color: $color-soft-orange;
-        margin-bottom: 37px;
+        margin-bottom: 2.3125rem;
 
         @include large {
-            font-size: 39px;
-            line-height: 30px;
-            margin: 12px 0 35px 0;
+            font-size: 2.4375rem;
+            line-height: 1.875rem;
+            margin: 0.75rem 0 2.1875rem 0;
         }
     }
 }

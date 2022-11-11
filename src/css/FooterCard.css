@@ -1,30 +1,30 @@
-@media (min-width: 1110px) {
+@media (min-width: 69.375rem) {
   footer {
     grid-column: 1/span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
   }
 }
-@media (min-width: 750px) and (max-width: 1110px) {
+@media (min-width: 46.875rem) and (max-width: 69.375rem) {
   footer {
     grid-column: 1/span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
   }
 }
 footer .footer_card {
   display: grid;
-  grid-template-columns: 100px auto;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
-  margin: 34px 0;
+  grid-template-columns: 6.25rem auto;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  margin: 2.125rem 0;
 }
 footer .footer_card img {
-  width: 100px;
+  width: 6.25rem;
 }
 footer .footer_card .content {
   display: flex;
@@ -32,16 +32,16 @@ footer .footer_card .content {
   color: hsl(236deg, 13%, 42%);
 }
 footer .footer_card .counter {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   color: hsl(233deg, 8%, 79%);
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 footer .footer_card h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.01em;
   color: hsl(240deg, 100%, 5%);
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
 }
 footer .footer_card h2:hover {
   color: hsl(5deg, 85%, 63%);

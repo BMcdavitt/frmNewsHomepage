@@ -5,9 +5,9 @@
 }
 
 body {
-  // padding: 16px;
+  // padding: 1rem;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +16,10 @@ body {
 
 .App {
   display: grid;
-  max-width: 1110px;
-  column-gap: 30px;
+  max-width: 69.375rem;
+  column-gap: 1.875rem;
   overflow: hidden;
-  padding: 16px;
+  padding: 1rem;
 
   @include med {
     grid-template-columns: 1fr 1fr;
@@ -27,7 +27,7 @@ body {
 
   @include large {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 74px 0;
+    margin: 4.625rem 0;
   }
 
 }
