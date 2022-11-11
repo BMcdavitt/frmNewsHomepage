@@ -13,7 +13,6 @@ function Header() {
         toggleMenu()
       }
 
-      // toggleMenu()
       console.log(1, menuState)
     }
     window.addEventListener('resize', handleResize)
@@ -39,7 +38,7 @@ function Header() {
       document.getElementById('menuItem5').style.animation =
         'itemSlideIn 1.4s forwards'
 
-      // document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden'
       document.getElementById('grayOut').style.display = 'block'
     } else {
       document.getElementById('menuHolder').style.animation =
