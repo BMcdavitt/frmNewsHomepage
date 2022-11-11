@@ -3,6 +3,8 @@ import './css/FooterCard.css'
 function FooterCard(props) {
   let count = String(props.count).padStart(2, '0')
 
+  console.log(props)
+
   return (
     <div className="footer_card">
       <img src={props.image} alt={props.imageAlt} />

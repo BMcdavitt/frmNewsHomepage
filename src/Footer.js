@@ -24,7 +24,7 @@ function Footer() {
     ]
 
     const footerCard = footerData.map((value, id) => {
-        return <FooterCard key={id} count={id + 1} title={value.title} summary={value.summary} image={value.image} />
+        return <FooterCard key={id} count={id + 1} title={value.title} summary={value.summary} image={value.image} imageAlt={value.imageAlt}/>
     })
 
     return (
