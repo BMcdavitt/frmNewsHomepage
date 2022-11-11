@@ -1,0 +1,24 @@
+aside {
+  background: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+  padding: 28px 21px;
+}
+@media (min-width: 1110px) {
+  aside {
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+    padding: 28px 21px 0 21px;
+  }
+}
+aside h2 {
+  font-size: 32px;
+  color: hsl(35deg, 77%, 62%);
+  margin-bottom: 37px;
+}
+@media (min-width: 1110px) {
+  aside h2 {
+    font-size: 39px;
+    line-height: 30px;
+    margin: 12px 0 35px 0;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'config';
+@import 'responsive';
+
+aside {
+    @include large {
+        grid-column: 3/ span 1;
+        grid-row: 2 / span 1;
+
+        padding: 28px 21px 0 21px;
+    }
+    background: $color-very-dark-blue;
+    color: $color-off-white;
+    padding: 28px 21px;
+    
+
+    h2 {
+        font-size: 32px;
+        color: $color-soft-orange;
+        margin-bottom: 37px;
+
+        @include large {
+            font-size: 39px;
+            line-height: 30px;
+            margin: 12px 0 35px 0;
+        }
+    }
+}

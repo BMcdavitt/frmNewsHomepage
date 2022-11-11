@@ -1,0 +1,15 @@
+.aside_card h3 {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+.aside_card h3:hover {
+  color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
+}
+.aside_card .divider {
+  width: 100%;
+  height: 2px;
+  background: hsl(36deg, 100%, 99%);
+  margin: 34px 0;
+}

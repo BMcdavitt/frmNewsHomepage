@@ -1,0 +1,57 @@
+@import 'config';
+@import 'responsive';
+
+footer {
+
+  @include large {
+    grid-column: 1 / span 3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+
+  @include med {
+    grid-column: 1 / span 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  .footer_card {
+    display: grid;
+    grid-template-columns: 100px auto;
+    column-gap: 24px;
+    margin: 34px 0;
+
+    img {
+      width: 100px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      color: $color-dark-grayish-blue;
+    }
+
+    .counter {
+      font-size: 32px;
+      font-weight: bold;
+      color: $color-grayish-blue;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 18px;
+      letter-spacing: 0.01em;
+      color: $color-very-dark-blue;
+      margin-bottom: 17px;
+
+      &:hover {
+        color: $color-soft-red;
+        cursor: pointer;
+      }
+    }
+  }
+}

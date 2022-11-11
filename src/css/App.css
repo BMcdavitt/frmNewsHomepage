@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: grid;
+  max-width: 1110px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  overflow: hidden;
+  padding: 16px;
+}
+@media (min-width: 750px) and (max-width: 1110px) {
+  .App {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1110px) {
+  .App {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 74px 0;
+  }
+}

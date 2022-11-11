@@ -1,0 +1,33 @@
+@import 'responsive';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // padding: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.App {
+  display: grid;
+  max-width: 1110px;
+  column-gap: 30px;
+  overflow: hidden;
+  padding: 16px;
+
+  @include med {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include large {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 74px 0;
+  }
+
+}

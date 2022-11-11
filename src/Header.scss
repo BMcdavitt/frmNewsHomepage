@@ -1,0 +1,143 @@
+@import 'config';
+@import 'responsive';
+
+header {
+  @include large {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+
+  @include med {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    position: relative;
+
+    @include large {
+      margin-bottom: 54px;
+    }
+  }
+
+  .grayOut {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: gray;
+    top: -16px;
+    left: -16px;
+    opacity: 0.6;
+    display: none;
+  }
+
+  .mobileMenu {
+    @include large {
+      display: none;
+    }
+
+    @include med {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    display: flex;
+
+    @include small {
+      position: absolute;
+      flex-direction: column;
+      right: -66vw;
+      top: -16px;
+      height: 100vh;
+      width: 66vw;
+      background-color: $color-off-white;
+
+
+    }
+
+    .mobileMenuClose {
+      display: none;
+      height: 30px;
+      width: 30px;
+      margin: 27px 21px 91px auto;
+
+      @include small {
+        display: block;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .menuItem {
+      margin-left: 40px;
+
+      &:hover {
+        color: $color-soft-red;
+        cursor: pointer;
+      }
+
+      @include small {
+        font-size: 18px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@keyframes menuSlideIn {
+  0% {
+    right: -66vw;
+  }
+  100% {
+    right: -16px;
+  }
+}
+
+@keyframes menuSlideOut {
+  from {
+    right: -16px;
+  }
+  to {
+    right: -66vw;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes itemSlideIn {
+  from {
+    margin-left: 400px
+  }
+  to {
+    margin-left: 40px
+  }
+}
+
+@keyframes itemSlideOut {
+  0% {
+    margin-left: 40px
+  }
+  99% {
+    margin-left: 400px
+  }
+  100% {
+    margin-left: 40px
+  }
+}

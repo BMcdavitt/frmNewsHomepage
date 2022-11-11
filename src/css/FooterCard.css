@@ -1,0 +1,49 @@
+@media (min-width: 1110px) {
+  footer {
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1110px) {
+  footer {
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+footer .footer_card {
+  display: grid;
+  grid-template-columns: 100px auto;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin: 34px 0;
+}
+footer .footer_card img {
+  width: 100px;
+}
+footer .footer_card .content {
+  display: flex;
+  flex-direction: column;
+  color: hsl(236deg, 13%, 42%);
+}
+footer .footer_card .counter {
+  font-size: 32px;
+  font-weight: bold;
+  color: hsl(233deg, 8%, 79%);
+  margin-bottom: 14px;
+}
+footer .footer_card h2 {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: hsl(240deg, 100%, 5%);
+  margin-bottom: 17px;
+}
+footer .footer_card h2:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+}
